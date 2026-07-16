@@ -71,6 +71,15 @@ const members = [
     photo: "images/members/angela-meng.jpg"
   },
   {
+    name: "Lyu Weichen",
+    role: "Intern",
+    focus: "I study computational methods for protein mutations and CRISPR-Cas1/Cas2 molecular recording systems.",
+    research:
+      "My research interests include computational and statistical methods for predicting the effects of protein mutations, as well as the development and optimization of CRISPR–Cas1/Cas2-based molecular recording systems.",
+    outside: "I enjoy powerlifting, archery, and reading mystery and detective novels.",
+    photo: "images/members/lyu-weichen.jpg"
+  },
+  {
     name: "Prannavraj G A",
     role: "Visiting Scholar",
     focus: "I combine computational biology and structural bioinformatics to study CRISPR-Cas systems.",
