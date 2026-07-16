@@ -358,7 +358,13 @@ dd {
 .member-photo {
   position: absolute;
   inset: 0;
+  background-position: center;
+  background-size: cover;
   transition: transform 420ms ease, opacity 420ms ease;
+}
+
+.member-card:first-child .member-photo {
+  background-position: 62% center;
 }
 
 .member-front,
