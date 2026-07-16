@@ -66,9 +66,9 @@ const members = [
   {
     name: "Prannavraj G A",
     role: "Visiting Scholar",
-    focus: "I combine computational biology and structural bioinformatics to study tCRISPR-Cas systems.",
+    focus: "I combine computational biology and structural bioinformatics to study CRISPR-Cas systems.",
     research:
-      "My research combines computational biology and structural bioinformatics to study tCRISPR-Cas systems.",
+      "My research combines computational biology and structural bioinformatics to study CRISPR-Cas systems.",
     outside: "I enjoy playing the guitar, rewatching favorites, and exploring new food spots."
   },
   {
