@@ -5,7 +5,8 @@ const members = [
     focus: "I lead the lab's work on engineering CRISPR and bacterial defense systems.",
     research:
       "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
-    outside: "I enjoy mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene."
+    outside: "I enjoy mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene.",
+    photo: "images/members/chunlei-jiao.jpg"
   },
   {
     name: "Dr. Wenjie Han",
@@ -13,7 +14,8 @@ const members = [
     focus: "I apply functional nucleic acids to gene editing and RNA recording.",
     research:
       "My research focuses on the application of functional nucleic acids to gene editing, particularly in large-gene knock-in, off-target site detection, and RNA recording.",
-    outside: "I enjoy eating and discovering good food."
+    outside: "I enjoy eating and discovering good food.",
+    photo: "images/members/wenjie-han.jpg"
   },
   {
     name: "Dr. Shuanshuan Xu",
@@ -21,7 +23,8 @@ const members = [
     focus: "I engineer CRISPR tools for large-scale genomic deletions.",
     research:
       "My research specializes in molecular biology and gene editing, and my current projects involve engineering CRISPR tools for large-scale genomic deletions.",
-    outside: "I spend my time boxing and practicing archery."
+    outside: "I spend my time boxing and practicing archery.",
+    photo: "images/members/shuanshuan-xu.jpg"
   },
   {
     name: "Dr. Chen Meng",
@@ -29,7 +32,8 @@ const members = [
     focus: "I work on gene editing tools, imaging, biosensors, and diagnostics.",
     research:
       "My research focuses on gene editing tools and their applications, with interests in cell imaging, biosensors, and disease diagnostics.",
-    outside: "I enjoy swimming, hiking, playing badminton, and watching TV dramas."
+    outside: "I enjoy swimming, hiking, playing badminton, and watching TV dramas.",
+    photo: "images/members/chen-meng.jpg"
   },
   {
     name: "Zhang Bin",
@@ -37,7 +41,8 @@ const members = [
     focus: "I develop novel gene-editing technologies for precision medicine.",
     research:
       "My research focuses on developing novel gene-editing technologies and exploring their applications in precision medicine.",
-    outside: "I enjoy discovering new foods, traveling, watching movies, hiking, meeting new people, and exploring the world together."
+    outside: "I enjoy discovering new foods, traveling, watching movies, hiking, meeting new people, and exploring the world together.",
+    photo: "images/members/zhang-bin.jpg"
   },
   {
     name: "Wang Lehua",
@@ -45,7 +50,8 @@ const members = [
     focus: "I develop and optimize programmable genome-editing systems.",
     research:
       "My research focuses on developing and optimizing programmable genome-editing systems, with an emphasis on molecular tool engineering and experimental validation.",
-    outside: "I enjoy staying active and exploring new places and cultures."
+    outside: "I enjoy staying active and exploring new places and cultures.",
+    photo: "images/members/wang-lehua.png"
   },
   {
     name: "Haixin Gao",
@@ -61,7 +67,8 @@ const members = [
     focus: "I am interested in gene editing, cell imaging, and intracellular protein delivery.",
     research:
       "My research interests include gene editing, cell imaging, and intracellular protein delivery systems.",
-    outside: "I enjoy photography, traveling, and snowboarding."
+    outside: "I enjoy photography, traveling, and snowboarding.",
+    photo: "images/members/angela-meng.jpg"
   },
   {
     name: "Prannavraj G A",
@@ -69,7 +76,8 @@ const members = [
     focus: "I combine computational biology and structural bioinformatics to study CRISPR-Cas systems.",
     research:
       "My research combines computational biology and structural bioinformatics to study CRISPR-Cas systems.",
-    outside: "I enjoy playing the guitar, rewatching favorites, and exploring new food spots."
+    outside: "I enjoy playing the guitar, rewatching favorites, and exploring new food spots.",
+    photo: "images/members/prannavraj-ga.jpg"
   },
   {
     name: "Melissa Ng",
@@ -77,7 +85,8 @@ const members = [
     focus: "I work on improving gene editing technology.",
     research:
       "My research work focuses on improving gene editing technology.",
-    outside: "I enjoy drinking Chagee, listening to music, and enjoying the outdoors."
+    outside: "I enjoy drinking Chagee, listening to music, and enjoying the outdoors.",
+    photo: "images/members/melissa-ng.jpeg"
   },
   {
     name: "Ziyi Wang",
@@ -85,7 +94,8 @@ const members = [
     focus: "I am exploring CRISPR biology and molecular tool development.",
     research:
       "My research interests center on CRISPR biology, molecular biology workflows, and learning how programmable gene-editing systems can be developed into useful research tools.",
-    outside: "I enjoy exploring new places, learning from different cultures, and spending time with friends."
+    outside: "I enjoy exploring new places, learning from different cultures, and spending time with friends.",
+    photo: "images/members/ziyi-wang.jpg"
   }
 ];
 
@@ -97,12 +107,18 @@ const modalTitle = document.querySelector("#modalTitle");
 const modalResearch = document.querySelector("#modalResearch");
 const modalOutside = document.querySelector("#modalOutside");
 
+function photoStyle(member, index) {
+  return member.photo
+    ? `background-image: url('${member.photo}'); background-size: cover; background-position: center;`
+    : `filter: hue-rotate(${index * 18}deg)`;
+}
+
 function renderMembers() {
   memberGrid.innerHTML = members
     .map(
       (member, index) => `
         <button class="member-card" type="button" data-member-index="${index}">
-          <span class="member-photo" style="filter: hue-rotate(${index * 18}deg)"></span>
+          <span class="member-photo" style="${photoStyle(member, index)}"></span>
           <span class="member-front">
             <span class="member-name">${member.name}</span>
           </span>
@@ -118,7 +134,7 @@ function renderMembers() {
 }
 
 function openModal(member, index) {
-  modalPhoto.style.filter = `hue-rotate(${index * 18}deg)`;
+  modalPhoto.setAttribute("style", photoStyle(member, index));
   modalRole.textContent = member.role;
   modalTitle.textContent = member.name;
   modalResearch.textContent = member.research;
