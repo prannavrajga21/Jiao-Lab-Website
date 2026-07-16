@@ -1,83 +1,91 @@
 const members = [
   {
-    name: "Jiao Chunlei",
+    name: "Chunlei Jiao",
     role: "Principal Investigator",
-    focus: "Designing CRISPR and bacterial defense platforms for diagnostics and therapeutics.",
+    focus: "I lead the lab's work on engineering CRISPR and bacterial defense systems.",
     research:
-      "Chunlei leads the lab's work on discovering, reprogramming, and engineering CRISPR systems, with an emphasis on RNA-guided sensing, precise genome editing, and molecular recording technologies.",
-    outside: "Mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene."
+      "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
+    outside: "I enjoy mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene."
   },
   {
-    name: "Postdoc Fellow 01",
-    role: "Postdoctoral Researcher",
-    focus: "High-throughput RNA detection with reprogrammed Cas systems.",
+    name: "Dr. Wenjie Han",
+    role: "Research Fellow",
+    focus: "I apply functional nucleic acids to gene editing and RNA recording.",
     research:
-      "This project develops sensitive RNA detection workflows that combine engineered guide RNAs, nuclease screening, and scalable assay readouts for diagnostic applications.",
-    outside: "Coffee brewing, trail walks, and science illustration."
+      "My research focuses on the application of functional nucleic acids to gene editing, particularly in large-gene knock-in, off-target site detection, and RNA recording.",
+    outside: "I enjoy eating and discovering good food."
   },
   {
-    name: "Postdoc Fellow 02",
-    role: "Postdoctoral Researcher",
-    focus: "Precise knock-in platforms for programmable genome writing.",
+    name: "Dr. Shuanshuan Xu",
+    role: "Research Fellow",
+    focus: "I engineer CRISPR tools for large-scale genomic deletions.",
     research:
-      "This work focuses on increasing knock-in efficiency and specificity by pairing CRISPR effectors with optimized repair templates and delivery conditions.",
-    outside: "Badminton, cooking, and building small lab gadgets."
+      "My research specializes in molecular biology and gene editing, and my current projects involve engineering CRISPR tools for large-scale genomic deletions.",
+    outside: "I spend my time boxing and practicing archery."
   },
   {
-    name: "PhD Student 01",
-    role: "PhD Student",
-    focus: "Non-cytotoxic RNA knock-down systems.",
+    name: "Dr. Chen Meng",
+    role: "Research Fellow",
+    focus: "I work on gene editing tools, imaging, biosensors, and diagnostics.",
     research:
-      "This project investigates RNA-targeting mechanisms that suppress transcripts while preserving cellular viability, enabling cleaner functional studies.",
-    outside: "Photography, climbing, and late-night playlists."
+      "My research focuses on gene editing tools and their applications, with interests in cell imaging, biosensors, and disease diagnostics.",
+    outside: "I enjoy swimming, hiking, playing badminton, and watching TV dramas."
   },
   {
-    name: "PhD Student 02",
-    role: "PhD Student",
-    focus: "Long-range genome knock-out engineering.",
+    name: "Zhang Bin",
+    role: "PhD Candidate",
+    focus: "I develop novel gene-editing technologies for precision medicine.",
     research:
-      "This project designs CRISPR strategies for deleting large genomic regions, then measures editing outcomes with sequencing-based validation.",
-    outside: "Board games, swimming, and handmade noodles."
+      "My research focuses on developing novel gene-editing technologies and exploring their applications in precision medicine.",
+    outside: "I enjoy discovering new foods, traveling, watching movies, hiking, meeting new people, and exploring the world together."
   },
   {
-    name: "PhD Student 03",
-    role: "PhD Student",
-    focus: "Spatial RNA recording in living cells.",
+    name: "Wang Lehua",
+    role: "PhD Candidate",
+    focus: "I develop and optimize programmable genome-editing systems.",
     research:
-      "This work adapts molecular recording approaches to capture RNA signals across space and time, connecting transcript dynamics with cell state.",
-    outside: "Sketching, podcasts, and weekend museums."
+      "My research focuses on developing and optimizing programmable genome-editing systems, with an emphasis on molecular tool engineering and experimental validation.",
+    outside: "I enjoy staying active and exploring new places and cultures."
   },
   {
-    name: "Visiting Scholar 01",
-    role: "Visiting Scholar",
-    focus: "Comparative analysis of bacterial defense systems.",
+    name: "Haixin Gao",
+    role: "PhD Candidate",
+    focus: "I study programmable biology through CRISPR and genome engineering.",
     research:
-      "This project mines bacterial genomes for defense-system diversity, prioritizing candidates that may be engineered into new research tools.",
-    outside: "Cycling, language learning, and market wandering."
+      "My research explores CRISPR-based molecular tools and their applications in genome engineering, with a focus on building reliable experimental systems for precise biological control.",
+    outside: "I enjoy learning new things, staying curious, and spending time with friends."
   },
   {
-    name: "Research Assistant 01",
-    role: "Research Assistant",
-    focus: "Assay optimization and molecular cloning workflows.",
-    research:
-      "This role supports cloning, screening, and validation pipelines, making experimental systems reproducible and ready for larger-scale testing.",
-    outside: "Baking, cinema, and organizing satisfyingly labeled boxes."
-  },
-  {
-    name: "Research Assistant 02",
-    role: "Research Assistant",
-    focus: "Cell culture, sequencing prep, and data handoff.",
-    research:
-      "This work bridges bench execution and analysis-ready datasets through careful sample preparation, quality control, and protocol tracking.",
-    outside: "Running, cafe hunting, and mechanical keyboards."
-  },
-  {
-    name: "Intern 01",
+    name: "Angela Meng",
     role: "Intern",
-    focus: "Prototype screens for guide RNA design.",
+    focus: "I am interested in gene editing, cell imaging, and intracellular protein delivery.",
     research:
-      "This internship project contributes to early-stage guide RNA design and small-scale screens that help identify promising CRISPR configurations.",
-    outside: "Tennis, digital art, and learning new programming tools."
+      "My research interests include gene editing, cell imaging, and intracellular protein delivery systems.",
+    outside: "I enjoy photography, traveling, and snowboarding."
+  },
+  {
+    name: "Prannavraj G A",
+    role: "Visiting Scholar",
+    focus: "I combine computational biology and structural bioinformatics to study tCRISPR-Cas systems.",
+    research:
+      "My research combines computational biology and structural bioinformatics to study tCRISPR-Cas systems.",
+    outside: "I enjoy playing the guitar, rewatching favorites, and exploring new food spots."
+  },
+  {
+    name: "Melissa Ng",
+    role: "FYP Student",
+    focus: "I work on improving gene editing technology.",
+    research:
+      "My research work focuses on improving gene editing technology.",
+    outside: "I enjoy drinking Chagee, listening to music, and enjoying the outdoors."
+  },
+  {
+    name: "Ziyi Wang",
+    role: "Exchange Student",
+    focus: "I am exploring CRISPR biology and molecular tool development.",
+    research:
+      "My research interests center on CRISPR biology, molecular biology workflows, and learning how programmable gene-editing systems can be developed into useful research tools.",
+    outside: "I enjoy exploring new places, learning from different cultures, and spending time with friends."
   }
 ];
 
