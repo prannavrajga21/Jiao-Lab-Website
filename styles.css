@@ -361,15 +361,6 @@ dd {
   transition: transform 420ms ease, opacity 420ms ease;
 }
 
-.member-photo::after {
-  content: "";
-  position: absolute;
-  inset: auto 20% 0;
-  height: 58%;
-  border-radius: 999px 999px 0 0;
-  background: rgba(247, 249, 251, 0.22);
-}
-
 .member-front,
 .member-back {
   position: absolute;
@@ -388,9 +379,7 @@ dd {
 .member-back {
   opacity: 0;
   transform: translateY(16px);
-  background:
-    linear-gradient(145deg, rgba(11, 31, 58, 0.96), rgba(11, 31, 58, 0.82)),
-    repeating-linear-gradient(118deg, transparent 0 20px, rgba(31, 182, 164, 0.26) 21px 23px, transparent 24px 44px);
+  background: linear-gradient(0deg, rgba(11, 31, 58, 0.9), rgba(11, 31, 58, 0.58));
 }
 
 .member-card:hover .member-photo,
