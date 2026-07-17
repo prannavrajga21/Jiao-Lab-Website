@@ -1,6 +1,6 @@
 const members = [
   {
-    name: "Chunlei Jiao",
+    name: "Dr. Chunlei Jiao",
     role: "Principal Investigator",
     focus: "I lead the lab's work on engineering CRISPR and bacterial defense systems.",
     research:
