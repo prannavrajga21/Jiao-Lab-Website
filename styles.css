@@ -127,7 +127,8 @@ h3,
 
 @media (prefers-reduced-motion: reduce) {
   .hero-overlay,
-  .hero-content {
+  .hero-content,
+  .hero-dna {
     animation: none;
     opacity: 1;
     transform: none;
@@ -151,63 +152,22 @@ h3,
   text-transform: uppercase;
 }
 
-.helix {
+.hero-dna {
   position: absolute;
-  width: 116px;
-  height: 580px;
-  opacity: 0.72;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  cursor: grab;
+  animation: heroOverlayFadeIn 1.8s ease forwards;
+  animation-delay: 2s;
 }
 
-.hero-helix {
-  right: clamp(18px, 8vw, 130px);
-  top: 18%;
-  transform: rotate(11deg);
-}
-
-.helix span {
-  position: absolute;
-  left: 50%;
-  width: 88px;
-  height: 4px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--teal), rgba(255, 255, 255, 0.7), var(--coral));
-  animation: twist 5.5s ease-in-out infinite;
-}
-
-.helix span::before,
-.helix span::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--teal);
-}
-
-.helix span::before {
-  left: -4px;
-}
-
-.helix span::after {
-  right: -4px;
-  background: var(--coral);
-}
-
-.helix span:nth-child(1) { top: 0; animation-delay: 0s; }
-.helix span:nth-child(2) { top: 58px; animation-delay: -0.35s; }
-.helix span:nth-child(3) { top: 116px; animation-delay: -0.7s; }
-.helix span:nth-child(4) { top: 174px; animation-delay: -1.05s; }
-.helix span:nth-child(5) { top: 232px; animation-delay: -1.4s; }
-.helix span:nth-child(6) { top: 290px; animation-delay: -1.75s; }
-.helix span:nth-child(7) { top: 348px; animation-delay: -2.1s; }
-.helix span:nth-child(8) { top: 406px; animation-delay: -2.45s; }
-.helix span:nth-child(9) { top: 464px; animation-delay: -2.8s; }
-.helix span:nth-child(10) { top: 522px; animation-delay: -3.15s; }
-
-@keyframes twist {
-  0%, 100% { transform: translateX(-50%) rotateY(0deg) scaleX(0.42); opacity: 0.46; }
-  50% { transform: translateX(-50%) rotateY(180deg) scaleX(1); opacity: 1; }
+.hero-dna:active {
+  cursor: grabbing;
 }
 
 .scroll-cue {
@@ -702,11 +662,6 @@ address a:hover {
     justify-content: space-between;
     gap: 8px;
     font-size: 13px;
-  }
-
-  .hero-helix {
-    right: -40px;
-    opacity: 0.4;
   }
 
   .about-grid,

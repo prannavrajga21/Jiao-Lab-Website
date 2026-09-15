@@ -32,10 +32,7 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-photo" role="img" aria-label="Jiao Lab group photo"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="helix hero-helix" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
+        <canvas class="hero-dna" id="heroDna" aria-hidden="true"></canvas>
         <div class="hero-content">
           <h1 id="hero-title">Jiao Lab</h1>
           <p>Department of Biological Sciences, National University of Singapore</p>
@@ -125,34 +122,14 @@
             <p class="eyebrow">Gallery</p>
             <h2 id="gallery-title">Lab outings, events, and everyday moments.</h2>
           </div>
-          <div class="gallery-collage" aria-label="Lab gallery collage with stock photography placeholders">
+          <div class="gallery-collage" aria-label="Lab gallery photos">
             <figure class="gallery-tile tile-large">
-              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80" alt="Group of people laughing together outdoors">
-              <figcaption>Lab outing</figcaption>
-            </figure>
-            <figure class="gallery-tile tile-tall">
-              <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=900&q=80" alt="Researchers collaborating around a table">
-              <figcaption>Project discussion</figcaption>
-            </figure>
-            <figure class="gallery-tile">
-              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80" alt="Audience at a scientific event">
-              <figcaption>Seminar day</figcaption>
-            </figure>
-            <figure class="gallery-tile tile-wide">
-              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80" alt="Friends gathered at a table">
+              <img src="images/gallery/lab-dinner.jpg" alt="Jiao Lab members gathered around the table for a team dinner">
               <figcaption>Team dinner</figcaption>
             </figure>
-            <figure class="gallery-tile">
-              <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=900&q=80" alt="Scientist working with laboratory glassware">
-              <figcaption>Bench moments</figcaption>
-            </figure>
-            <figure class="gallery-tile tile-tall">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="People walking on a green outdoor trail">
-              <figcaption>Weekend walk</figcaption>
-            </figure>
-            <figure class="gallery-tile tile-wide">
-              <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="Team meeting around laptops">
-              <figcaption>Planning session</figcaption>
+            <figure class="gallery-tile tile-large">
+              <img src="images/gallery/lab-outing-mall.jpg" alt="Jiao Lab members enjoying dessert together at a mall outing">
+              <figcaption>Lab outing</figcaption>
             </figure>
           </div>
         </div>
@@ -187,6 +164,7 @@
       </article>
     </div>
 
+    <script src="./hero-dna.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
