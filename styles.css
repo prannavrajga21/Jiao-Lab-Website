@@ -87,11 +87,7 @@ h3,
 .hero-photo {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 28% 30%, rgba(31, 182, 164, 0.36), transparent 28%),
-    radial-gradient(circle at 72% 42%, rgba(255, 107, 92, 0.24), transparent 25%),
-    linear-gradient(135deg, rgba(11, 31, 58, 0.32), rgba(11, 31, 58, 0.84)),
-    url("https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=2200&q=80") center / cover;
+  background: url("images/hero-group-photo.jpg") center / cover;
   transform: scale(1.02);
 }
 
@@ -99,8 +95,14 @@ h3,
   position: absolute;
   inset: 0;
   background:
+    radial-gradient(circle at 28% 30%, rgba(31, 182, 164, 0.36), transparent 28%),
+    radial-gradient(circle at 72% 42%, rgba(255, 107, 92, 0.24), transparent 25%),
+    linear-gradient(135deg, rgba(11, 31, 58, 0.32), rgba(11, 31, 58, 0.84)),
     linear-gradient(90deg, rgba(11, 31, 58, 0.72), rgba(11, 31, 58, 0.44)),
     linear-gradient(0deg, rgba(11, 31, 58, 0.56), rgba(11, 31, 58, 0.12));
+  opacity: 0;
+  animation: heroOverlayFadeIn 1.8s ease forwards;
+  animation-delay: 2s;
 }
 
 .hero-content {
@@ -108,6 +110,28 @@ h3,
   z-index: 2;
   width: min(980px, calc(100% - 36px));
   text-align: center;
+  opacity: 0;
+  animation: heroContentFadeIn 1.8s ease forwards;
+  animation-delay: 2.4s;
+}
+
+@keyframes heroOverlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes heroContentFadeIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-overlay,
+  .hero-content {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .hero h1 {
