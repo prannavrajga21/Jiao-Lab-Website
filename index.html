@@ -32,7 +32,7 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-photo" role="img" aria-label="Jiao Lab group photo"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
-        <canvas class="hero-dna" id="heroDna" aria-hidden="true"></canvas>
+        <canvas class="hero-dna" id="heroDna" data-dna aria-hidden="true"></canvas>
         <div class="hero-content">
           <h1 id="hero-title">Jiao Lab</h1>
           <p>Department of Biological Sciences, National University of Singapore</p>
@@ -73,8 +73,10 @@
       <div class="divider-helix" aria-hidden="true"></div>
 
       <section class="section projects" aria-labelledby="projects-title">
-        <div class="section-inner">
-          <p class="eyebrow" id="projects-title">Current Projects</p>
+        <canvas class="projects-dna no-fade-in" id="projectsDna" data-dna aria-hidden="true"></canvas>
+        <div class="projects-overlay" aria-hidden="true"></div>
+        <div class="section-inner projects-inner">
+          <p class="eyebrow eyebrow-light" id="projects-title">Current Projects</p>
           <div class="project-grid">
             <article><h3>RNA Detection</h3><p>Sensitive and multiplexed in vitro RNA detection via reprogrammed tracrRNAs.</p></article>
             <article><h3>Knock-In</h3><p>Precise and highly efficient large insertion in eukaryotic cells.</p></article>

@@ -7,7 +7,7 @@ const members = [
       "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
     outside: "I enjoy mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene.",
     photo: "images/members/chunlei-jiao.jpg",
-    photoPosition: "62% 15%"
+    photoPosition: "37% center"
   },
   {
     name: "Dr. Wenjie Han",
@@ -17,8 +17,8 @@ const members = [
       "My research focuses on the application of functional nucleic acids to gene editing, particularly in large-gene knock-in, off-target site detection, and RNA recording.",
     outside: "I enjoy eating and discovering good food.",
     photo: "images/members/wenjie-han.jpg",
-    photoPosition: "center 15%",
-    photoZoom: 1.15
+    photoPosition: "58% center",
+    photoZoom: 1.1
   },
   {
     name: "Dr. Shuanshuan Xu",
@@ -38,8 +38,8 @@ const members = [
       "My research focuses on developing tools for biosensors, cell imaging, and precise genome editing.",
     outside: "I enjoy swimming, hiking, playing badminton, and watching TV dramas.",
     photo: "images/members/chen-meng.jpg",
-    photoPosition: "center 15%",
-    photoZoom: 1.15
+    photoPosition: "50% center",
+    photoZoom: 1.1
   },
   {
     name: "Zhang Bin",
@@ -49,8 +49,8 @@ const members = [
       "My research focuses on developing novel genome editing technologies and exploring their applications in precision medicine.",
     outside: "I enjoy discovering new foods, traveling, watching movies, hiking, meeting new people, and exploring the world together.",
     photo: "images/members/zhang-bin.jpg",
-    photoPosition: "center 15%",
-    photoZoom: 1.15
+    photoPosition: "58% center",
+    photoZoom: 1.1
   },
   {
     name: "Wang Lehua",
@@ -88,8 +88,7 @@ const members = [
       "My research interests include computational and statistical methods for predicting the effects of protein mutations, as well as the development and optimization of molecular recording systems.",
     outside: "I enjoy powerlifting, archery, and reading mystery and detective novels.",
     photo: "images/members/lyu-weichen.jpg",
-    photoPosition: "center 15%",
-    photoZoom: 1.15
+    photoZoom: 1.1
   },
   {
     name: "Prannavraj G A",
@@ -139,8 +138,8 @@ function photoStyle(member, index) {
 
 function photoFrameStyle(member) {
   if (!member.photoZoom || member.photoZoom === 1) return "";
-  const origin = member.photoPosition || "center";
-  return `transform: scale(${member.photoZoom}); transform-origin: ${origin};`;
+  const originX = (member.photoPosition || "center").split(" ")[0];
+  return `transform: scale(${member.photoZoom}); transform-origin: ${originX} top;`;
 }
 
 function renderMembers() {
