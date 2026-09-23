@@ -101,8 +101,8 @@ h3,
     linear-gradient(90deg, rgba(11, 31, 58, 0.72), rgba(11, 31, 58, 0.44)),
     linear-gradient(0deg, rgba(11, 31, 58, 0.56), rgba(11, 31, 58, 0.12));
   opacity: 0;
-  animation: heroOverlayFadeIn 1.8s ease forwards;
-  animation-delay: 2s;
+  animation: heroOverlayFadeIn 1s ease forwards;
+  animation-delay: 0.9s;
 }
 
 .hero-content {
@@ -111,8 +111,8 @@ h3,
   width: min(980px, calc(100% - 36px));
   text-align: center;
   opacity: 0;
-  animation: heroContentFadeIn 1.8s ease forwards;
-  animation-delay: 2.4s;
+  animation: heroContentFadeIn 1s ease forwards;
+  animation-delay: 1.15s;
 }
 
 @keyframes heroOverlayFadeIn {
@@ -162,8 +162,8 @@ h3,
   opacity: 0;
   pointer-events: none;
   cursor: grab;
-  animation: heroOverlayFadeIn 1.8s ease forwards;
-  animation-delay: 2s;
+  animation: heroOverlayFadeIn 1s ease forwards;
+  animation-delay: 0.9s;
 }
 
 .hero-dna:active {
@@ -339,16 +339,18 @@ dd {
     linear-gradient(145deg, rgba(31, 182, 164, 0.92), rgba(11, 31, 58, 0.96) 52%, rgba(255, 107, 92, 0.72));
 }
 
+.member-photo-frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
 .member-photo {
   position: absolute;
   inset: 0;
   background-position: center;
   background-size: cover;
   transition: transform 420ms ease, opacity 420ms ease;
-}
-
-.member-card:first-child .member-photo {
-  background-position: 62% center;
 }
 
 .member-front,

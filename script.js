@@ -2,61 +2,67 @@ const members = [
   {
     name: "Dr. Chunlei Jiao",
     role: "Principal Investigator",
-    focus: "I lead the lab's work on engineering CRISPR and bacterial defense systems.",
+    focus: "",
     research:
       "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
     outside: "I enjoy mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene.",
-    photo: "images/members/chunlei-jiao.jpg"
+    photo: "images/members/chunlei-jiao.jpg",
+    photoPosition: "62% center"
   },
   {
     name: "Dr. Wenjie Han",
     role: "Research Fellow",
-    focus: "I apply functional nucleic acids to gene editing and RNA recording.",
+    focus: "Off-targeting detection, RNA recording, precise knock-in.",
     research:
       "My research focuses on the application of functional nucleic acids to gene editing, particularly in large-gene knock-in, off-target site detection, and RNA recording.",
     outside: "I enjoy eating and discovering good food.",
-    photo: "images/members/wenjie-han.jpg"
+    photo: "images/members/wenjie-han.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Dr. Shuanshuan Xu",
     role: "Research Fellow",
-    focus: "I engineer CRISPR tools for large-scale genomic deletions.",
+    focus: "Large genomic deletions.",
     research:
-      "My research specializes in molecular biology and gene editing, and my current projects involve engineering CRISPR tools for large-scale genomic deletions.",
+      "My research focuses on biochemistry characterization of a new CRISPR system and engineering it into a tool for long-range genomic deletions.",
     outside: "I spend my time boxing and practicing archery.",
-    photo: "images/members/shuanshuan-xu.jpg"
+    photo: "images/members/shuanshuan-xu.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Dr. Chen Meng",
     role: "Research Fellow",
-    focus: "I work on gene editing tools, imaging, biosensors, and diagnostics.",
+    focus: "Biosensors, cell imaging, and precise genome editing.",
     research:
-      "My research focuses on gene editing tools and their applications, with interests in cell imaging, biosensors, and disease diagnostics.",
+      "My research focuses on developing tools for biosensors, cell imaging, and precise genome editing.",
     outside: "I enjoy swimming, hiking, playing badminton, and watching TV dramas.",
-    photo: "images/members/chen-meng.jpg"
+    photo: "images/members/chen-meng.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Zhang Bin",
     role: "PhD Candidate",
-    focus: "I develop novel gene-editing technologies for precision medicine.",
+    focus: "Precise genome editing.",
     research:
-      "My research focuses on developing novel gene-editing technologies and exploring their applications in precision medicine.",
+      "My research focuses on developing novel genome editing technologies and exploring their applications in precision medicine.",
     outside: "I enjoy discovering new foods, traveling, watching movies, hiking, meeting new people, and exploring the world together.",
-    photo: "images/members/zhang-bin.jpg"
+    photo: "images/members/zhang-bin.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Wang Lehua",
     role: "PhD Candidate",
-    focus: "I develop and optimize programmable genome-editing systems.",
+    focus: "Engineering novel genome editors.",
     research:
-      "My research focuses on developing and optimizing programmable genome-editing systems, with an emphasis on molecular tool engineering and experimental validation.",
+      "My research focuses on developing and optimizing programmable genome-editing systems, with an emphasis on biochemical characterization and protein evolution.",
     outside: "I enjoy staying active and exploring new places and cultures.",
-    photo: "images/members/wang-lehua.png"
+    photo: "images/members/wang-lehua.png",
+    photoZoom: 1.15
   },
   {
     name: "Haixin Gao",
     role: "PhD Candidate",
-    focus: "I study programmable biology through CRISPR and genome engineering.",
+    focus: "Engineer precise RNA targeting tools.",
     research:
       "My research explores CRISPR-based molecular tools and their applications in genome engineering, with a focus on building reliable experimental systems for precise biological control.",
     outside: "I enjoy learning new things, staying curious, and spending time with friends."
@@ -68,25 +74,28 @@ const members = [
     research:
       "My research interests include gene editing, cell imaging, and intracellular protein delivery systems.",
     outside: "I enjoy photography, traveling, and snowboarding.",
-    photo: "images/members/angela-meng.jpg"
+    photo: "images/members/angela-meng.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Lyu Weichen",
     role: "Intern",
-    focus: "I study computational methods for protein mutations and CRISPR-Cas1/Cas2 molecular recording systems.",
+    focus: "Protein mutation prediction, molecular recording systems.",
     research:
-      "My research interests include computational and statistical methods for predicting the effects of protein mutations, as well as the development and optimization of CRISPR–Cas1/Cas2-based molecular recording systems.",
+      "My research interests include computational and statistical methods for predicting the effects of protein mutations, as well as the development and optimization of molecular recording systems.",
     outside: "I enjoy powerlifting, archery, and reading mystery and detective novels.",
-    photo: "images/members/lyu-weichen.jpg"
+    photo: "images/members/lyu-weichen.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Prannavraj G A",
     role: "Visiting Scholar",
-    focus: "I combine computational biology and structural bioinformatics to study CRISPR-Cas systems.",
+    focus: "Mining new CRISPR systems.",
     research:
       "My research combines computational biology and structural bioinformatics to study CRISPR-Cas systems.",
     outside: "I enjoy playing the guitar, rewatching favorites, and exploring new food spots.",
-    photo: "images/members/prannavraj-ga.jpg"
+    photo: "images/members/prannavraj-ga.jpg",
+    photoZoom: 1.15
   },
   {
     name: "Melissa Ng",
@@ -95,7 +104,8 @@ const members = [
     research:
       "My research work focuses on improving gene editing technology.",
     outside: "I enjoy drinking Chagee, listening to music, and enjoying the outdoors.",
-    photo: "images/members/melissa-ng.jpeg"
+    photo: "images/members/melissa-ng.jpeg",
+    photoZoom: 1.15
   },
   {
     name: "Ziyi Wang",
@@ -104,7 +114,8 @@ const members = [
     research:
       "My research interests center on CRISPR biology, molecular biology workflows, and learning how programmable gene-editing systems can be developed into useful research tools.",
     outside: "I enjoy exploring new places, learning from different cultures, and spending time with friends.",
-    photo: "images/members/ziyi-wang.jpg"
+    photo: "images/members/ziyi-wang.jpg",
+    photoZoom: 1.15
   }
 ];
 
@@ -118,8 +129,12 @@ const modalOutside = document.querySelector("#modalOutside");
 
 function photoStyle(member, index) {
   return member.photo
-    ? `background-image: url('${member.photo}'); background-size: cover; background-position: center;`
+    ? `background-image: url('${member.photo}'); background-size: cover; background-position: ${member.photoPosition || "center"};`
     : `filter: hue-rotate(${index * 18}deg)`;
+}
+
+function photoFrameStyle(member) {
+  return member.photoZoom && member.photoZoom !== 1 ? `transform: scale(${member.photoZoom});` : "";
 }
 
 function renderMembers() {
@@ -127,7 +142,9 @@ function renderMembers() {
     .map(
       (member, index) => `
         <button class="member-card" type="button" data-member-index="${index}">
-          <span class="member-photo" style="${photoStyle(member, index)}"></span>
+          <span class="member-photo-frame" style="${photoFrameStyle(member)}">
+            <span class="member-photo" style="${photoStyle(member, index)}"></span>
+          </span>
           <span class="member-front">
             <span class="member-name">${member.name}</span>
           </span>
