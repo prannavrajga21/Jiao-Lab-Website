@@ -42,8 +42,8 @@ const members = [
     photoZoom: 1.1
   },
   {
-    name: "Yan He",
-    role: "Postdoc Research Fellow",
+    name: "Dr. Yan He",
+    role: "Research Fellow",
     focus: "Development and application of gene editing tools.",
     research:
       "My research focuses on the development and application of gene editing tools, using them more safely and efficiently to solve biological problems.",
