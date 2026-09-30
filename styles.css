@@ -802,3 +802,96 @@ address a:hover {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ---- Alumni (names only, small bullets) ---- */
+.alumni {
+  margin-top: clamp(40px, 5vw, 60px);
+  padding-top: clamp(28px, 3vw, 36px);
+  border-top: 1px solid var(--line);
+}
+
+.alumni-title {
+  margin: 0 0 16px;
+  color: var(--teal);
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.alumni-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.alumni-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.alumni-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+
+/* ---- News ---- */
+.news {
+  background: var(--white);
+}
+
+.news-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+  gap: clamp(16px, 4vw, 48px);
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+}
+
+.news-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.news-date {
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--teal);
+}
+
+.news-text {
+  margin: 0;
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

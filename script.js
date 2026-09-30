@@ -42,6 +42,17 @@ const members = [
     photoZoom: 1.1
   },
   {
+    name: "Yan He",
+    role: "Postdoc Research Fellow",
+    focus: "Development and application of gene editing tools.",
+    research:
+      "My research focuses on the development and application of gene editing tools, using them more safely and efficiently to solve biological problems.",
+    outside: "I enjoy reading and hiking.",
+    photo: "images/members/yan.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.12
+  },
+  {
     name: "Zhang Bin",
     role: "PhD Candidate",
     focus: "Precise genome editing.",
@@ -63,32 +74,26 @@ const members = [
     photoZoom: 1.15
   },
   {
-    name: "Haixin Gao",
+    name: "Qi Xiaoyang",
     role: "PhD Candidate",
-    focus: "Engineer precise RNA targeting tools.",
+    focus: "CRISPR tools for precise, large-scale genome engineering.",
     research:
-      "My research explores CRISPR-based molecular tools and their applications in genome engineering, with a focus on building reliable experimental systems for precise biological control.",
-    outside: "I enjoy learning new things, staying curious, and spending time with friends."
+      "My research focuses on developing CRISPR-based tools for precise and large-scale genome engineering.",
+    outside: "I love reading novels and experimenting with homemade coffee drinks. I also enjoy working out and swimming. I love traveling and hope to explore different cities and countries through their local food and ski slopes.",
+    photo: "images/members/qi-xiaoyang.jpg",
+    photoPosition: "46% center",
+    photoZoom: 1.12
   },
   {
-    name: "Angela Meng",
-    role: "Intern",
-    focus: "I am interested in gene editing, cell imaging, and intracellular protein delivery.",
+    name: "Shao Xinjuan",
+    role: "PhD Candidate",
+    focus: "RNA imaging, CRISPR, and protein engineering.",
     research:
-      "My research interests include gene editing, cell imaging, and intracellular protein delivery systems.",
-    outside: "I enjoy photography, traveling, and snowboarding.",
-    photo: "images/members/angela-meng.jpg",
-    photoZoom: 1.15
-  },
-  {
-    name: "Lyu Weichen",
-    role: "Intern",
-    focus: "Protein mutation prediction, molecular recording systems.",
-    research:
-      "My research interests include computational and statistical methods for predicting the effects of protein mutations, as well as the development and optimization of molecular recording systems.",
-    outside: "I enjoy powerlifting, archery, and reading mystery and detective novels.",
-    photo: "images/members/lyu-weichen.jpg",
-    photoZoom: 1.1
+      "My research focuses on RNA imaging, CRISPR, and protein engineering for advancing molecular tools and cellular understanding.",
+    outside: "I enjoy traveling, exploring culinary delights, and photography.",
+    photo: "images/members/shaoxinjuan.jpg",
+    photoPosition: "52% center",
+    photoZoom: 1.12
   },
   {
     name: "Prannavraj G A",
@@ -119,6 +124,28 @@ const members = [
     outside: "I enjoy exploring new places, learning from different cultures, and spending time with friends.",
     photo: "images/members/ziyi-wang.jpg",
     photoZoom: 1.15
+  },
+  {
+    name: "Guo Ziyu",
+    role: "FYP Student",
+    focus: "Discovering and engineering CRISPR and bacterial defense systems.",
+    research:
+      "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
+    outside: "I enjoy photography, watching movies, and traveling to explore new places and cultures.",
+    photo: "images/members/guo-ziyu.jpg",
+    photoPosition: "48% center",
+    photoZoom: 1.1
+  },
+  {
+    name: "Sunxiang Zhang",
+    role: "FYP Student",
+    focus: "Efficient, precise RNA-guided genome-editing tools.",
+    research:
+      "My research focuses on developing and engineering efficient and precise genome-editing tools, particularly through programmable RNA-guided systems. I am interested in understanding and reprogramming novel molecular systems and exploring their potential applications in genome engineering.",
+    outside: "I enjoy playing video games and football, traveling, and watching movies.",
+    photo: "images/members/sunxiang-zhang.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
   }
 ];
 
