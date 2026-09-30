@@ -895,3 +895,59 @@ address a:hover {
     gap: 6px;
   }
 }
+
+/* ---- About: heading + PI card on top, research text below ---- */
+.about-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+  gap: clamp(28px, 6vw, 84px);
+  align-items: start;
+}
+
+.about-lead h2 {
+  margin-top: 12px;
+}
+
+.about-research {
+  margin-top: clamp(38px, 5vw, 64px);
+  max-width: 1000px;
+  columns: 2;
+  column-gap: clamp(34px, 5vw, 64px);
+}
+
+.about-research p {
+  margin: 0 0 18px;
+  font-size: clamp(16px, 1.4vw, 18px);
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.about-research p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .about-research {
+    columns: 1;
+  }
+}
+
+/* Smooth reveal (opacity + slight rise only, no layout animation) */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+[data-reveal].in-view {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
