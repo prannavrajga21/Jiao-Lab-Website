@@ -1,6 +1,6 @@
 const members = [
   {
-    name: "Dr. Chunlei Jiao",
+    name: "Dr. Jiao Chunlei",
     role: "Principal Investigator",
     focus: "",
     research:
@@ -10,7 +10,7 @@ const members = [
     photoPosition: "37% center"
   },
   {
-    name: "Dr. Wenjie Han",
+    name: "Dr. Han Wenjie",
     role: "Research Fellow",
     focus: "Off-targeting detection, RNA recording, precise knock-in.",
     research:
@@ -21,7 +21,7 @@ const members = [
     photoZoom: 1.1
   },
   {
-    name: "Dr. Shuanshuan Xu",
+    name: "Dr. Xu Shuanshuan",
     role: "Research Fellow",
     focus: "Large genomic deletions.",
     research:
@@ -42,7 +42,7 @@ const members = [
     photoZoom: 1.1
   },
   {
-    name: "Dr. Yan He",
+    name: "Dr. He Yan",
     role: "Research Fellow",
     focus: "Development and application of gene editing tools.",
     research:
@@ -51,6 +51,17 @@ const members = [
     photo: "images/members/yan.jpg",
     photoPosition: "50% center",
     photoZoom: 1.12
+  },
+  {
+    name: "Dr. He Kaining",
+    role: "Visiting Scholar",
+    focus: "Polyampholyte hydrogels and mycelium-based biomaterials.",
+    research:
+      "My research focuses on tough polyampholyte (PA) and living mycelium-based hydrogels, exploring their properties and applications in advanced materials and bioengineering.",
+    outside: "I enjoy reading novels and watching films.",
+    photo: "images/members/kaining-he.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
   },
   {
     name: "Zhang Bin",
@@ -96,8 +107,19 @@ const members = [
     photoZoom: 1.12
   },
   {
-    name: "Prannavraj G A",
-    role: "Visiting Scholar",
+    name: "Tang Zifan",
+    role: "Master's Student",
+    focus: "Gene editing platform — engineering programmable tools for precise and targeted genomic modification.",
+    research:
+      "My research focuses on the development of gene editing platforms, exploring how programmable tools such as CRISPR systems can be engineered and optimized for precise genomic modifications across diverse biological contexts.",
+    outside: "I enjoy movies and badminton.",
+    photo: "images/members/tang-zifan.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
+  },
+  {
+    name: "G A Prannavraj",
+    role: "Visiting Intern",
     focus: "Mining new CRISPR systems.",
     research:
       "My research combines computational biology and structural bioinformatics to study CRISPR-Cas systems.",
@@ -107,7 +129,7 @@ const members = [
   },
   {
     name: "Melissa Ng",
-    role: "FYP Student",
+    role: "UROPS Student",
     focus: "I work on improving gene editing technology.",
     research:
       "My research work focuses on improving gene editing technology.",
@@ -116,18 +138,8 @@ const members = [
     photoZoom: 1.15
   },
   {
-    name: "Ziyi Wang",
-    role: "Exchange Student",
-    focus: "I am exploring CRISPR biology and molecular tool development.",
-    research:
-      "My research interests center on CRISPR biology, molecular biology workflows, and learning how programmable gene-editing systems can be developed into useful research tools.",
-    outside: "I enjoy exploring new places, learning from different cultures, and spending time with friends.",
-    photo: "images/members/ziyi-wang.jpg",
-    photoZoom: 1.15
-  },
-  {
     name: "Guo Ziyu",
-    role: "FYP Student",
+    role: "Master's Student",
     focus: "Discovering and engineering CRISPR and bacterial defense systems.",
     research:
       "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
@@ -137,8 +149,8 @@ const members = [
     photoZoom: 1.1
   },
   {
-    name: "Sunxiang Zhang",
-    role: "FYP Student",
+    name: "Zhang Sunxiang",
+    role: "Master's Student",
     focus: "Efficient, precise RNA-guided genome-editing tools.",
     research:
       "My research focuses on developing and engineering efficient and precise genome-editing tools, particularly through programmable RNA-guided systems. I am interested in understanding and reprogramming novel molecular systems and exploring their potential applications in genome engineering.",
@@ -148,7 +160,6 @@ const members = [
     photoZoom: 1.1
   }
 ];
-
 const memberGrid = document.querySelector("#memberGrid");
 const modal = document.querySelector("#memberModal");
 const modalPhoto = document.querySelector("#modalPhoto");

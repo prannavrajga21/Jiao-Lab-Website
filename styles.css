@@ -847,6 +847,17 @@ address a:hover {
   background: var(--coral);
 }
 
+.alumni-category {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.alumni-category:last-of-type {
+  margin-bottom: 0;
+}
+
 /* ---- News ---- */
 .news {
   background: var(--white);
