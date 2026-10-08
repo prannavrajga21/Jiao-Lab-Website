@@ -75,6 +75,17 @@ const members = [
     photoZoom: 1.1
   },
   {
+    name: "Ahmed Abogosh",
+    role: "PhD Candidate",
+    focus: "Generative and programmable therapeutics and diagnostics.",
+    research:
+      "My research focuses on developing generative and programmable therapeutics and diagnostics using cutting-edge techniques, computational tools, and machine learning.",
+    outside: "Outside the lab, I am a reader, traveler, and foodie. I stay active playing racket sports (pickleball and badminton), and I love spending my free time enjoying board game nights.",
+    photo: "images/members/ahmed-abogosh.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
+  },
+  {
     name: "Wang Lehua",
     role: "PhD Candidate",
     focus: "Engineering novel genome editors.",
@@ -136,6 +147,17 @@ const members = [
     outside: "I enjoy drinking Chagee, listening to music, and enjoying the outdoors.",
     photo: "images/members/melissa-ng.jpeg",
     photoZoom: 1.15
+  },
+  {
+    name: "Yuan Jiawen",
+    role: "FYP Student",
+    focus: "Engineering and exploring CRISPR technology.",
+    research:
+      "My research focuses on engineering and exploring CRISPR technology.",
+    outside: "I enjoy crocheting, reading, music, and exploring new hobbies.",
+    photo: "images/members/yuan-jiawen.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
   },
   {
     name: "Guo Ziyu",
