@@ -7,7 +7,8 @@ const members = [
       "My research focuses on discovering, reprogramming, and engineering CRISPR and novel bacterial defense systems for diagnostics, therapeutics, genome editing, RNA sensing, and molecular recording.",
     outside: "I enjoy mentoring early-career scientists, reading across biology and engineering, and exploring Singapore's food scene.",
     photo: "images/members/chunlei-jiao.jpg",
-    photoPosition: "37% center"
+    photoPosition: "37% 20%",
+    photoZoom: 1.15
   },
   {
     name: "Dr. Han Wenjie",
@@ -82,8 +83,8 @@ const members = [
       "My research focuses on developing generative and programmable therapeutics and diagnostics using cutting-edge techniques, computational tools, and machine learning.",
     outside: "Outside the lab, I am a reader, traveler, and foodie. I stay active playing racket sports (pickleball and badminton), and I love spending my free time enjoying board game nights.",
     photo: "images/members/ahmed-abogosh.jpg",
-    photoPosition: "50% center",
-    photoZoom: 1.1
+    photoPosition: "50% 15%",
+    photoZoom: 1.2
   },
   {
     name: "Wang Lehua",
@@ -156,8 +157,8 @@ const members = [
       "My research focuses on engineering and exploring CRISPR technology.",
     outside: "I enjoy crocheting, reading, music, and exploring new hobbies.",
     photo: "images/members/yuan-jiawen.jpg",
-    photoPosition: "50% center",
-    photoZoom: 1.1
+    photoPosition: "50% 15%",
+    photoZoom: 1.2
   },
   {
     name: "Guo Ziyu",
