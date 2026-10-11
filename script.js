@@ -87,18 +87,6 @@ const members = [
     photoZoom: 1.1
   },
   {
-    name: "Yang Haixu",
-    role: "PhD Candidate",
-    focus: "Engineered control of gene expression using CRISPRa/CRISPRi circuits and RNA sensors in mammalian cells.",
-    research:
-      "My research focuses on engineered control of gene expression — combining dCas9 with kissing-loop RNA scaffolds to build tunable CRISPRa/CRISPRi circuits in mammalian cells, with the longer-term aim of sensitive RNA sensing and compact synthetic regulatory devices.",
-    outside:
-      "Outside the lab, I enjoy wildlife photography and birdwatching along Singapore's green corridors, tinkering with a long-running Minecraft modpack of my own making, and sketching over a good cup of coffee.",
-    photo: "images/members/yang-haixu.jpg",
-    photoPosition: "50% center",
-    photoZoom: 1.1
-  },
-  {
     name: "Wang Lehua",
     role: "PhD Candidate",
     focus: "Engineering novel genome editors.",
@@ -138,6 +126,18 @@ const members = [
       "My research focuses on the development of gene editing platforms, exploring how programmable tools such as CRISPR systems can be engineered and optimized for precise genomic modifications across diverse biological contexts.",
     outside: "I enjoy movies and badminton.",
     photo: "images/members/tang-zifan.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
+  },
+  {
+    name: "Yang Haixu",
+    role: "Master's Student",
+    focus: "Engineered control of gene expression using CRISPRa/CRISPRi circuits and RNA sensors in mammalian cells.",
+    research:
+      "My research focuses on engineered control of gene expression — combining dCas9 with kissing-loop RNA scaffolds to build tunable CRISPRa/CRISPRi circuits in mammalian cells, with the longer-term aim of sensitive RNA sensing and compact synthetic regulatory devices.",
+    outside:
+      "Outside the lab, I enjoy wildlife photography and birdwatching along Singapore's green corridors, tinkering with a long-running Minecraft modpack of my own making, and sketching over a good cup of coffee.",
+    photo: "images/members/yang-haixu.jpg",
     photoPosition: "50% center",
     photoZoom: 1.1
   },
