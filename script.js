@@ -83,8 +83,8 @@ const members = [
       "My research focuses on developing generative and programmable therapeutics and diagnostics using cutting-edge techniques, computational tools, and machine learning.",
     outside: "Outside the lab, I am a reader, traveler, and foodie. I stay active playing racket sports (pickleball and badminton), and I love spending my free time enjoying board game nights.",
     photo: "images/members/ahmed-abogosh.jpg",
-    photoPosition: "50% 15%",
-    photoZoom: 1.2
+    photoPosition: "50% center",
+    photoZoom: 1.1
   },
   {
     name: "Wang Lehua",
@@ -157,8 +157,8 @@ const members = [
       "My research focuses on engineering and exploring CRISPR technology.",
     outside: "I enjoy crocheting, reading, music, and exploring new hobbies.",
     photo: "images/members/yuan-jiawen.jpg",
-    photoPosition: "50% 15%",
-    photoZoom: 1.2
+    photoPosition: "50% center",
+    photoZoom: 1.1
   },
   {
     name: "Guo Ziyu",
