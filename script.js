@@ -87,6 +87,18 @@ const members = [
     photoZoom: 1.1
   },
   {
+    name: "Yang Haixu",
+    role: "PhD Candidate",
+    focus: "Engineered control of gene expression using CRISPRa/CRISPRi circuits and RNA sensors in mammalian cells.",
+    research:
+      "My research focuses on engineered control of gene expression — combining dCas9 with kissing-loop RNA scaffolds to build tunable CRISPRa/CRISPRi circuits in mammalian cells, with the longer-term aim of sensitive RNA sensing and compact synthetic regulatory devices.",
+    outside:
+      "Outside the lab, I enjoy wildlife photography and birdwatching along Singapore's green corridors, tinkering with a long-running Minecraft modpack of my own making, and sketching over a good cup of coffee.",
+    photo: "images/members/yang-haixu.jpg",
+    photoPosition: "50% center",
+    photoZoom: 1.1
+  },
+  {
     name: "Wang Lehua",
     role: "PhD Candidate",
     focus: "Engineering novel genome editors.",
