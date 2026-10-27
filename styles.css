@@ -604,17 +604,15 @@ dd {
 }
 
 .footer-disclaimer-bar {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 32px;
-  padding-top: 16px;
+  grid-column: 1 / -1;
+  margin-top: 28px;
   text-align: center;
 }
 
 .footer-disclaimer {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.4);
   margin: 0 auto;
-  max-width: 700px;
   line-height: 1.6;
 }
 
