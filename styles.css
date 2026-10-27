@@ -603,16 +603,13 @@ dd {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.footer-disclaimer-bar {
-  grid-column: 1 / -1;
-  margin-top: 28px;
-  text-align: center;
-}
-
 .footer-disclaimer {
+  display: block;
+  text-align: center;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.4);
-  margin: 0 auto;
+  margin: 24px auto 0;
+  padding: 0 24px;
   line-height: 1.6;
 }
 
